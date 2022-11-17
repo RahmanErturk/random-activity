@@ -19,7 +19,7 @@ export default function Header() {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        `http://www.boredapi.com/api/activity?type=${searchValue.toLowerCase()}`
+        `https://www.boredapi.com/api/activity?type=${searchValue.toLowerCase()}`
       );
 
       if (response.status !== 200) {

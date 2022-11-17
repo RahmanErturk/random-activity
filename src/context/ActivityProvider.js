@@ -9,7 +9,7 @@ export default function ActivityProvider(props) {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(`http://www.boredapi.com/api/activity/`);
+      const response = await fetch(`https://www.boredapi.com/api/activity/`);
 
       if (response.status !== 200) {
         throw new Error(`Error! status: ${response.status}`);
